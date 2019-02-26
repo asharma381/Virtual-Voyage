@@ -20,9 +20,10 @@
 		402973861DB839ED00EC8C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402973801DB839EA00EC8C32 /* AppDelegate.swift */; };
 		402973871DB839ED00EC8C32 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402973811DB839EA00EC8C32 /* DeviceViewController.swift */; };
 		402973881DB839ED00EC8C32 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402973821DB839EA00EC8C32 /* MainTableViewController.swift */; };
-		4810C3DD221B7E7E00C7C42B /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4810C3DC221B7E7E00C7C42B /* VisionObjectRecognitionViewController.swift */; };
-		4810C3DF221B7F4100C7C42B /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4810C3DE221B7F4100C7C42B /* VisionViewController.swift */; };
 		481EA54C22194F7D00AE8D8F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EA54B22194F7D00AE8D8F /* TutorialViewController.swift */; };
+		48350FE72222465800DB7AE8 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48350FE62222465800DB7AE8 /* TutorialCollectionViewCell.swift */; };
+		485304C2221BFF4D003F98A3 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485304C1221BFF4D003F98A3 /* TransitionViewController.swift */; };
+		48A38149221C96EC00392336 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A38148221C96EC00392336 /* CircularTransition.swift */; };
 		48FE5B802219418C0016400F /* InitialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE5B7F2219418C0016400F /* InitialController.swift */; };
 		48FE5B82221949890016400F /* AudioTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE5B81221949890016400F /* AudioTutorialViewController.swift */; };
 		6A4F36091F2AF1C300F1FCC7 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F36081F2AF1C300F1FCC7 /* art.scnassets */; };
@@ -49,9 +50,10 @@
 		402973801DB839EA00EC8C32 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		402973811DB839EA00EC8C32 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		402973821DB839EA00EC8C32 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		4810C3DC221B7E7E00C7C42B /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
-		4810C3DE221B7F4100C7C42B /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		481EA54B22194F7D00AE8D8F /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		48350FE62222465800DB7AE8 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
+		485304C1221BFF4D003F98A3 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		48A38148221C96EC00392336 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		48FE5B7F2219418C0016400F /* InitialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialController.swift; sourceTree = "<group>"; };
 		48FE5B81221949890016400F /* AudioTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTutorialViewController.swift; sourceTree = "<group>"; };
 		6A4F36081F2AF1C300F1FCC7 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		4029731F1DB81F5A00EC8C32 = {
 			isa = PBXGroup;
 			children = (
+				48A38148221C96EC00392336 /* CircularTransition.swift */,
 				1A2EFF41F64FC47F9E047F00 /* Frameworks */,
 				402973241DB81F5A00EC8C32 /* Shared */,
 				4029732F1DB81F5B00EC8C32 /* iOS */,
@@ -140,13 +143,13 @@
 			isa = PBXGroup;
 			children = (
 				402973751DB8260000EC8C32 /* Main.storyboard */,
-				4810C3DE221B7F4100C7C42B /* VisionViewController.swift */,
-				4810C3DC221B7E7E00C7C42B /* VisionObjectRecognitionViewController.swift */,
+				485304C1221BFF4D003F98A3 /* TransitionViewController.swift */,
 				481EA54B22194F7D00AE8D8F /* TutorialViewController.swift */,
 				48FE5B81221949890016400F /* AudioTutorialViewController.swift */,
 				48FE5B7F2219418C0016400F /* InitialController.swift */,
 				402973371DB81F5B00EC8C32 /* LaunchScreen.storyboard */,
 				4029733A1DB81F5B00EC8C32 /* Info.plist */,
+				48350FE62222465800DB7AE8 /* TutorialCollectionViewCell.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -444,16 +447,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4810C3DD221B7E7E00C7C42B /* VisionObjectRecognitionViewController.swift in Sources */,
 				48FE5B802219418C0016400F /* InitialController.swift in Sources */,
+				48350FE72222465800DB7AE8 /* TutorialCollectionViewCell.swift in Sources */,
 				C095D8472109508200575419 /* HeadAndSoundController.swift in Sources */,
 				481EA54C22194F7D00AE8D8F /* TutorialViewController.swift in Sources */,
-				4810C3DF221B7F4100C7C42B /* VisionViewController.swift in Sources */,
 				402973851DB839EA00EC8C32 /* MainTableViewController.swift in Sources */,
 				6A4F360B1F2AF21000F1FCC7 /* headViewController.swift in Sources */,
 				48FE5B82221949890016400F /* AudioTutorialViewController.swift in Sources */,
 				402973831DB839EA00EC8C32 /* AppDelegate.swift in Sources */,
+				48A38149221C96EC00392336 /* CircularTransition.swift in Sources */,
 				4029737E1DB839AF00EC8C32 /* ScanTableViewController.swift in Sources */,
+				485304C2221BFF4D003F98A3 /* TransitionViewController.swift in Sources */,
 				402973841DB839EA00EC8C32 /* DeviceViewController.swift in Sources */,
 				6A52F4C71F317B6300C43E8B /* PlaySoundsController.swift in Sources */,
 			);
